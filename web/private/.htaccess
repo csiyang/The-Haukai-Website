@@ -1,4 +1,4 @@
 AuthName "Secure members space"
 AuthUserFile "/web/.htpasswd"
 AuthType Basic
-require valid-user
+Require valid-user
