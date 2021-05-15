@@ -1,0 +1,10 @@
+body {
+    background-image: url('images/title.jpg');
+}
+
+.header-img {
+    width: 100%;
+    height: 400px;
+    background: url('images/title.jpg');
+    background-size: cover;
+}

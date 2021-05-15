@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Our Menu</title>
+</head>
+
+<body>
+    <header class="w3-container w3-amber w3-padding-32">
+        <h1>The Haukai Restraunt</h1>
+    </header>
+
+    <nav class="w3-bar w3-black">
+        <a href="home.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        <a href="hours.html" class="w3-bar-item w3-button w3-mobile">Hours</a>
+        <a href="menu.html" class="w3-bar-item w3-button w3-mobile w3-white w3-text-black">Menu</a>
+        <a href="reservation.html" class="w3-bar-item w3-button w3-mobile">Reservations</a>
+        <a href="privacy.html" class="w3-bar-item w3-button w3-mobile">Privacy Policy</a>
+    </nav>
+
+    <main class="w3-container w3-center">
+        <h2>Our Menu</h2>
+
+        <div class="w3-container">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Appetizers</button>
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                    <header class="w3-container w3-amber">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h2>Appetizers</h2>
+                    </header>
+                    <div class="w3-container">
+                        <h4>Rewena Bread 10</h4>
+                        <p>Traditional Maori bread.</p>
+                        <h4>Paua Fritter 16</h4>
+                        <p>Finely diced pieces of paua, served with a side salad annd horopito dressing.</p>
+                        <h4>Raw Fish 20</h4>
+                        <p>Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
+                        <h4>Poached Salmon 22</h4>
+                        <p>Salmon poached in an orange and pistachio glaze, served with rewena bread.</p>
+                        <h4>Seafood Basket 25</h4>
+                        <p>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container">
+            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">Mains</button>
+
+            <div id="id02" class="w3-modal">
+                <div class="w3-modal-content">
+                    <header class="w3-container w3-amber">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h2>Mains</h2>
+                    </header>
+                    <div class="w3-container">
+                        <h4>Fish of the day 25</h4>
+                        <p>Beer battered fish and kumara fries, served with a side salad and homemade tartare.</p>
+                        <h4>Mussels and Scallops 25</h4>
+                        <p>Steamed mussel & scallop mousse, honey and soy broth.</p>
+                        <h4>Seafood Chowder 30</h4>
+                        <p>Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+                        <h4>Pork Belly 30</h4>
+                        <p>Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle.</p>
+                        <h4>Lamb Steak 33</h4>
+                        <p>New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut squash and a mushroom Jus.</p>
+                        <h4>Venison</h4>
+                        <p>Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container">
+            <button onclick="document.getElementById('id03').style.display='block'" class="w3-button">Dessert</button>
+
+            <div id="id03" class="w3-modal">
+                <div class="w3-modal-content">
+                    <header class="w3-container w3-amber">
+                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h2>Dessert</h2>
+                    </header>
+                    <div class="w3-container">
+                        <h4>Kapiti Ice Cream 10</h4>
+                        <p>Check for daily specials.</p>
+                        <h4>Steam Pudding 12</h4>
+                        <p>Golden syrup flavoured steam pudding, served with vanilla ice cream</p>
+                        <h4>Mini Pavlova 16</h4>
+                        <p>Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.</p>
+                        <h4>Baoffee Pie 16</h4>
+                        <p>Toffee, fresh bananas and fresh cream.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">Beverages</button>
+
+        <div id="id04" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-amber">
+                    <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-amber w3-xlarge w3-display-topright">&times;</span>
+                    <h2>Beverages B/G</h2>
+                </header>
+
+                <div class="w3-bar w3-border-bottom">
+                    <button class="tablink w3-bar-item w3-button" onclick="openMenu(event, 'red')">Red</button>
+                    <button class="tablink w3-bar-item w3-button" onclick="openMenu(event, 'white')">White</button>
+                    <button class="tablink w3-bar-item w3-button" onclick="openMenu(event, 'beercider')">Beers and Ciders</button>
+                    <button class="tablink w3-bar-item w3-button" onclick="openMenu(event, 'nonalc')">Non-Alcoholic</button>
+                </div>
+
+                <div id="red" class="w3-container city">
+                    <h1>Red Wines</h1>
+                    <p>Terrace Edge Pinot Noir, 2012, Wairarapa 53/13</p>
+                    <p>Altitude Pinot Noir, 2010, Marlborough 64/15</p>
+                    <p>Greystone Pinot Noir, 2012, Wairarapa 73/17</p>
+                    <p>Terrace Edge, Syrah, 2012 Wairarapa 53/13</p>
+                    <p>Altitude Syrah, 2010 Marlborough 64/15</p>
+                    <p>Greystone Syrah, 2012, Wairarapa 73/17</p>
+                    <p>Pegasus Bay Merlot, 2013, Waipara 65/14</p>
+                    <p>Pegasus Bay Pinot Noir, 2013, Waipara 110</p>
+                </div>
+
+                <div id="white" class="w3-container city">
+                    <h1>White Wines</h1>
+                    <p>Spade Oak Pinot Gris, 2011, Gisborne 40/10</p>
+                    <p>Maude Pinot Gris, 2017, Otago 49.50/11</p>
+                    <p>Charles Wiffen Chardonnay, 2013, Otago 48/11</p>
+                    <p>Amisfield, Riesling, 2016, Otago 53/12</p>
+                    <p>Lamont Riesling, 2010, Otago 57/13</p>
+                    <p>Elephant Hill Viognier, 2013, Hawkes Bay 55/12</p>
+                    <p>Folium Sauvignon Blanc, 2011, Marlborough 52/11</p>
+                    <p>Billecart-Salmon Brut Reserve, France 120</p>
+                </div>
+
+                <div id="beercider" class="w3-container city">
+                    <h1>Beer and Ciders</h1>
+                    <p>Garage project range 11</p>
+                    <p>Tuatara range 11</p>
+                    <p>Panhead range 10</p>
+                    <p>Coopers Ale 10</p>
+                    <p>Heineken 11</p>
+                    <p>Moa Cider 10</p>
+                    <p>Crooked Cider 10</p>
+                </div>
+
+                <div id="nonalc" class="w3-container city">
+                    <h1>Non-Alcoholic</h1>
+                    <p>Mineral water 4.00</p>
+                    <p>Soft drinks 4.00</p>
+                    <p>Juice 4.00</p>
+                    <p>Coffee 4.50</p>
+                    <p>Tea 3.50</p>
+                </div>
+            </div>
+
+            <script>
+                document.getElementsByClassName("tablink")[0].click();
+
+                function openMenu(evt, cityName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("city");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].classList.remove("w3-light-grey");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.classList.add("w3-light-grey");
+                }
+            </script>
+        </div>
+    </main>
+
+    <footer class="w3-container w3-amber">
+        <a href="private/staff.html">Staff Members</a>
+        <p>©Copyright 2021 by The Haukai Restraunt. All rights reversed.</p>
+    </footer>
+
+</body>
+
+</html>
