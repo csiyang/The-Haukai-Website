@@ -1,4 +1,4 @@
 AuthName "Secure members space"
-AuthUserFile D:/Open Polytech/Current S1_2021/Bit607 Web Development/Assignment 2/The Haukai Website/.htpasswd
+AuthUserFile /web/.htpasswd
 AuthType Basic
 require valid-user
